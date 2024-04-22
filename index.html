@@ -23,9 +23,9 @@
                 <img src="./spotify/img/logo.svg" alt="logo spotify grande">
             </section>
 
-            <section class="main-search-library">
+            <section>
                 <nav>
-                    <ul class="grey-font font-s">
+                    <ul class="grey-font font-s no-dots main-search-library">
                         <li><img class="grey-filter" src="./spotify/img/home.svg" alt="home"><span>Home</span></li>
                         <li><img class="grey-filter" src="./spotify/img/search.svg" alt="search"><span>Cerca</span></li>
                         <li><img class="grey-filter" src="./spotify/img/libreria.svg" alt="library"><span>La tua
@@ -35,7 +35,7 @@
                 </nav>
 
                 <nav>
-                    <ul class="grey-font font-xs">
+                    <ul class="grey-font font-xs no-dots playlists">
                         <li class="white-font">PLAYLIST</li>
                         <li class="create-playlist font-s"><i class="fa-solid fa-square-plus fa-3x"></i>Crea Playlist
                         </li>
@@ -52,10 +52,11 @@
 
 
             <section class="download-app">
-                <p class="grey-font font-xs download"><img class="grey-filter" src="./spotify/img/download.svg"
+                <p class="grey-font font-xs no-dots download"><img class="grey-filter" src="./spotify/img/download.svg"
                         alt="download">Installa app</p>
                 <hr>
-                <p class="profile white-font font-s"><img src="./spotify/img/profile.svg" alt="profile">John Doe</p>
+                <p class="profile white-font no-dots font-s"><img src="./spotify/img/profile.svg" alt="profile">John Doe
+                </p>
             </section>
 
 
@@ -63,7 +64,72 @@
         </header>
 
         <main>
-            <section class="upgrade"></section>
+            <div class="upgrade flex">
+                <section>
+                    <button class="white-font font-xs">EFFETTUA L'UPGRADE</button>
+                </section>
+            </div>
+
+
+            <section class="artists">
+                <div>
+                    <nav>
+                        <ul class="grey-font font-xs no-dots categories flex">
+                            <li>IN EVIDENZA</li>
+                            <li>PODCAST</li>
+                            <li>CLASSIFICHE</li>
+                            <li>GENERI E MOOD</li>
+                            <li>NUOVE USCITE</li>
+                            <li>SCOPRI</li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <h2 class="white-font">Recently played</h2>
+
+                <div class="recently-played">
+                    <div class="row">
+                        <div class="card">
+                            <img src="./spotify/img/metal_lifting.jpg" alt="metal">
+                            <p class="white-font font-s">Heavy Metal</p>
+                            <p class="grey-font font-xs">Subtitle</p>
+                        </div>
+                        <div class="card">
+                            <img src="./spotify/img/stranger.jpeg" alt="stranger things">
+                            <p class="white-font font-s">Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)
+                            </p>
+                            <p class="grey-font font-xs">Kyle Dixon & Michael Stein</p>
+                        </div>
+                        <div class="card">
+                            <img src="./spotify/img/aquietplace.jpeg" alt="a quiet place">
+                            <p class="white-font font-s">A quiet place</p>
+                            <p class="grey-font font-xs">Subtitle</p>
+                        </div>
+                        <div class="card">
+                            <img src="./spotify/img/split.jpeg" alt="split">
+                            <p class="white-font font-s">Split</p>
+                            <p class="grey-font font-xs">Subtitle</p>
+                        </div>
+                        <div class="card">
+                            <img src="./spotify/img/cure.jpeg" alt="cure">
+                            <p class="white-font font-s">A cure for wellness</p>
+                            <p class="grey-font font-xs">Subtitle</p>
+                        </div>
+                        <div class="card">
+                            <img src="./spotify/img/sinister.jpeg" alt="sinister">
+                            <p class="white-font font-s">Sinister</p>
+                            <p class="grey-font font-xs">Subtitle</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </section>
+
+
+
         </main>
     </div>
 

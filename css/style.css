@@ -5,30 +5,7 @@
     font-family: "Montserrat", sans-serif;
 }
 
-
-
-body {
-    width: 1200px;
-    height: 100vh;
-    margin: 0 auto;
-
-}
-
-.flex {
-    display: flex;
-}
-
-header {
-
-    width: 210px;
-    height: 852px;
-    background-color: #000000;
-}
-
-.big-logo {
-    width: 160px;
-    padding: 1rem;
-}
+/*CLASSI RIUTILIZZABILI*/
 
 .grey-filter {
     filter: invert(50%);
@@ -42,23 +19,60 @@ header {
     color: white;
 }
 
+.no-dots {
+    list-style-type: none;
+}
 
 .font-xs {
     font-size: 11px;
     font-weight: bold;
-    list-style-type: none;
 }
 
 .font-s {
     font-size: 13px;
-    list-style-type: none;
     font-weight: bold;
 }
 
-li {
+/*CLASSI RIUTILIZZABILI*/
+
+
+body {
+    width: 1200px;
+    height: 100vh;
+    margin: 0 auto;
+
+}
+
+.flex {
+    display: flex;
+}
+
+/*HEADER*/
+
+header {
+
+    width: 210px;
+    height: 852px;
+    background-color: #000000;
+}
+
+.big-logo {
+    width: 160px;
+    padding: 1rem;
+}
+
+
+.main-search-library>li {
     margin-left: 18px;
     margin-bottom: 5px;
 }
+
+
+.playlists>li {
+    margin-left: 18px;
+    margin-bottom: 5px;
+}
+
 
 li>img {
     width: 22px;
@@ -116,12 +130,12 @@ ul.font-xs {
     border-radius: 50%;
 }
 
+/*HEADER*/
 
 
 
 
-
-
+/*MAIN*/
 
 main {
     width: calc(1200px - 10%);
@@ -132,7 +146,44 @@ main {
 .upgrade {
     background-color: #080b12;
     height: calc(926px - 852px);
+    justify-content: end;
+    align-items: center;
+    padding-right: 4px;
 }
+
+
+
+button {
+    background-color: #080b12;
+    height: 40px;
+    width: 200px;
+    border-radius: 50px;
+}
+
+.artists {
+    height: calc(852px - 74px);
+}
+
+.categories {
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 3em;
+}
+
+.row {
+    display: flex;
+}
+
+.card>img {
+    width: 100%;
+}
+
+
+/*MAIN*/
+
+
+
+/*FOOTER*/
 
 footer {
 
@@ -140,6 +191,9 @@ footer {
     height: 75px;
     background-color: #282828;
 }
+
+/*FOOTER*/
+
 
 
 /*MEDIA  QUERIES*/
