@@ -110,7 +110,7 @@ ul.font-xs {
 
 .download-app {
     position: relative;
-    top: 39%;
+    top: 39.5%;
     margin-left: 18px;
     width: 160px;
 }
@@ -210,9 +210,49 @@ div.card {
     padding-top: 0.5rem;
 }
 
+.for-john {
+    padding-top: 1rem;
+}
+
 .for-john>p {
     padding-left: 1rem;
 }
+
+div.suggestions-card {
+    width: 16.8%;
+    padding-top: 0.5em;
+}
+
+div.suggestions-card>img {
+    width: 150.15px;
+}
+
+div.suggestions-card>p {
+    width: 150.15px;
+    text-align: center;
+    padding-top: 0.8rem;
+}
+
+.popular>p {
+    padding-left: 1rem;
+}
+
+div.popular-card {
+    width: 16.8%;
+    padding-top: 0.5em;
+}
+
+div.popular-card>img {
+    width: 150.15px;
+    border-radius: 50%;
+}
+
+div.popular-card>p {
+    width: 150.15px;
+    text-align: center;
+    padding-top: 0.8rem;
+}
+
 
 
 /*MAIN*/
