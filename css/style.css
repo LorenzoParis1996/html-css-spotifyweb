@@ -23,6 +23,12 @@
     list-style-type: none;
 }
 
+.font-xxs {
+    font-size: 10px;
+    font-weight: bold;
+}
+
+
 .font-xs {
     font-size: 11px;
     font-weight: bold;
@@ -33,11 +39,16 @@
     font-weight: bold;
 }
 
+.font-h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
 /*CLASSI RIUTILIZZABILI*/
 
 
 body {
-    width: 1200px;
+    width: 1250px;
     height: 100vh;
     margin: 0 auto;
 
@@ -51,7 +62,7 @@ body {
 
 header {
 
-    width: 210px;
+    width: 200px;
     height: 852px;
     background-color: #000000;
 }
@@ -138,7 +149,7 @@ ul.font-xs {
 /*MAIN*/
 
 main {
-    width: calc(1200px - 10%);
+    width: calc(1250px - 200px);
     height: 852px;
     background-color: #141922;
 }
@@ -162,20 +173,45 @@ button {
 
 .artists {
     height: calc(852px - 74px);
+    overflow-y: scroll;
 }
 
 .categories {
     flex-wrap: wrap;
     justify-content: center;
-    column-gap: 3em;
+    column-gap: 2em;
+    padding-bottom: 1rem;
 }
 
 .row {
     display: flex;
+    padding: 1rem;
+}
+
+h2 {
+    padding: 0.5rem 1rem;
+}
+
+div.card {
+    width: 100%;
 }
 
 .card>img {
-    width: 100%;
+    width: 90%;
+}
+
+.card>p {
+    width: 90%;
+    text-align: center;
+    padding-top: 0.8rem;
+}
+
+.card>p.font-xxs {
+    padding-top: 0.5rem;
+}
+
+.for-john>p {
+    padding-left: 1rem;
 }
 
 
