@@ -53,7 +53,7 @@
 
 
 body {
-    width: 1250px;
+    max-width: 1250px;
     height: 100vh;
     margin: 0 auto;
 
@@ -372,16 +372,6 @@ footer {
     border-radius: 5px;
 }
 
-
-
-
-
-
-
-
-
-
-
 /*FOOTER*/
 
 
@@ -390,7 +380,7 @@ footer {
 
 @media screen and (max-width: 996px) {
     body {
-        width: 996px;
+        max-width: 996px;
     }
 
     header {
@@ -400,7 +390,7 @@ footer {
 
 @media screen and (max-width: 770px) {
     body {
-        width: 770px;
+        max-width: 770px;
     }
 
     header {
@@ -410,7 +400,7 @@ footer {
 
 @media screen and (max-width: 580px) {
     body {
-        width: 580px;
+        max-width: 580px;
     }
 
     header {
@@ -421,7 +411,7 @@ footer {
 
 @media screen and (max-width: 480px) {
     body {
-        width: 480px;
+        max-width: 480px;
     }
 
     header {
