@@ -168,7 +168,6 @@ main {
 }
 
 
-
 button {
     background-color: #080b12;
     height: 40px;
@@ -188,8 +187,13 @@ button {
     padding-bottom: 1rem;
 }
 
+.recently-played {
+    width: 100%;
+}
+
 .row {
     display: flex;
+    flex-wrap: wrap;
     padding: 1rem;
 }
 
@@ -198,15 +202,15 @@ h2 {
 }
 
 div.card {
-    width: 100%;
+    width: calc((1050px / 6) - 1rem);
 }
 
-.card>img {
-    width: 90%;
+.card-img>img {
+    width: 150px;
 }
 
 .card>p {
-    width: 90%;
+    width: 150px;
     text-align: center;
     padding-top: 0.8rem;
 }
@@ -224,13 +228,11 @@ div.card {
 }
 
 div.suggestions-card {
-    width: 16.8%;
+    width: 159px;
     padding-top: 0.5em;
 }
 
-div.suggestions-card>img {
-    width: 150.15px;
-}
+
 
 div.suggestions-card>p {
     width: 150.15px;
@@ -243,20 +245,21 @@ div.suggestions-card>p {
 }
 
 div.popular-card {
-    width: 16.8%;
+    width: 159px;
     padding-top: 0.5em;
 }
 
-div.popular-card>img {
-    width: 150.15px;
+.popular-card img {
     border-radius: 50%;
 }
+
 
 div.popular-card>p {
     width: 150.15px;
     text-align: center;
     padding-top: 0.8rem;
 }
+
 
 
 
