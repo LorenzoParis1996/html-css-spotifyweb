@@ -298,12 +298,45 @@ footer {
 }
 
 .task-bar {
-    text-align: center;
+    padding-bottom: 1rem;
 }
 
-.song-progress {
-    width: 400px;
+.song-buttons {
+    text-align: center;
+    padding-bottom: 10px;
 }
+
+.song-buttons i:not(.fa-circle-play) {
+    padding: 0 0.5em;
+    vertical-align: middle;
+    font-size: 13px;
+}
+
+.fa-circle-play {
+    font-size: 25px;
+    padding: 0 0.8em;
+    vertical-align: middle;
+}
+
+
+
+.song-progress {
+    position: relative;
+    width: 400px;
+    background-color: #797979;
+    height: 3px;
+    border-radius: 5px;
+}
+
+.actual-progress {
+    position: absolute;
+    background-color: white;
+    height: 3px;
+    width: 100px;
+    border-radius: 5px;
+}
+
+
 
 .foot-row>i {
     font-size: 10px;
@@ -311,21 +344,33 @@ footer {
 }
 
 .foot-row {
-    position: relative;
     width: 180px;
 }
 
-.foot-row:after {
-    content: '';
+.volume-bar {
+    position: relative;
     height: 3px;
-    width: 100px;
     background-color: #797979;
-    display: block;
-    position: absolute;
+    width: 100px;
     border-radius: 5px;
-    left: 45%;
-    bottom: 30%;
+    display: inline-block;
+    vertical-align: middle;
 }
+
+.actual-volume {
+    position: absolute;
+    background-color: white;
+    height: 3px;
+    width: 30px;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
 
 
 
@@ -342,7 +387,7 @@ footer {
     }
 
     header {
-        width: 27%
+        width: 200px;
     }
 }
 
@@ -352,7 +397,7 @@ footer {
     }
 
     header {
-        width: 50%;
+        width: 200px;
     }
 }
 
@@ -362,7 +407,7 @@ footer {
     }
 
     header {
-        width: 101%;
+        width: 200px;
     }
 
 }
@@ -373,7 +418,7 @@ footer {
     }
 
     header {
-        width: 10%;
+        width: 40px;
     }
 
 }
