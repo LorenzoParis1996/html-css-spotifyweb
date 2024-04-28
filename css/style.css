@@ -52,12 +52,6 @@
 /*CLASSI RIUTILIZZABILI*/
 
 
-body {
-    max-width: 1250px;
-    height: 100vh;
-    margin: 0 auto;
-
-}
 
 .flex {
     display: flex;
@@ -154,8 +148,8 @@ ul.font-xs {
 /*MAIN*/
 
 main {
-    width: calc(1250px - 200px);
-    height: 852px;
+    flex-grow: 1;
+    height: 100%;
     background-color: #141922;
 }
 
@@ -176,46 +170,54 @@ button {
 }
 
 .artists {
+    max-width: 100%;
     height: calc(852px - 74px);
     overflow-y: scroll;
 }
 
+.discover {
+    display: flex;
+    justify-content: center;
+}
+
 .categories {
+    width: 100%;
     flex-wrap: wrap;
     justify-content: center;
     column-gap: 2em;
     padding-bottom: 1rem;
 }
 
-.recently-played {
-    width: 100%;
-}
+
 
 .row {
     display: flex;
     flex-wrap: wrap;
     padding: 1rem;
+    column-gap: 1em;
 }
 
 h2 {
     padding: 0.5rem 1rem;
 }
 
-div.card {
-    width: calc((1050px / 6) - 1rem);
+
+.row div.card {
+    width: calc(100% / 6 - 1em / 6 * 5);
+    aspect-ratio: 1/1;
 }
 
-.card-img>img {
-    width: 150px;
+
+.card-img img {
+    width: 100%;
 }
 
-.card>p {
-    width: 150px;
+.card p {
     text-align: center;
     padding-top: 0.8rem;
 }
 
-.card>p.font-xxs {
+.card p.font-xxs {
     padding-top: 0.5rem;
 }
 
@@ -223,39 +225,42 @@ div.card {
     padding-top: 1rem;
 }
 
-.for-john>p {
+.for-john p {
     padding-left: 1rem;
 }
 
-div.suggestions-card {
-    width: 159px;
+.row div.suggestions-card {
+    width: calc(100% / 6 - 1em / 6 * 5);
+    aspect-ratio: 1/1;
     padding-top: 0.5em;
 }
 
+.suggestions-card img {
+    width: 100%;
+}
 
-
-div.suggestions-card>p {
-    width: 150.15px;
+div.suggestions-card p {
     text-align: center;
     padding-top: 0.8rem;
 }
 
-.popular>p {
+.popular p {
     padding-left: 1rem;
 }
 
-div.popular-card {
-    width: 159px;
+.row div.popular-card {
+    width: calc(100% / 6 - 1em / 6 * 5);
+    aspect-ratio: 1/1;
     padding-top: 0.5em;
 }
 
 .popular-card img {
+    width: 100%;
     border-radius: 50%;
 }
 
 
-div.popular-card>p {
-    width: 150.15px;
+div.popular-card p {
     text-align: center;
     padding-top: 0.8rem;
 }
@@ -275,7 +280,7 @@ footer {
     align-items: center;
     padding: 0 1rem;
     width: 100%;
-    height: calc(100vh -927px);
+    height: 75px;
     background-color: #282828;
 }
 
@@ -378,41 +383,50 @@ footer {
 
 /*MEDIA  QUERIES*/
 
-@media screen and (max-width: 996px) {
-    body {
-        max-width: 996px;
-    }
 
-    header {
-        width: 200px;
-    }
-}
 
-@media screen and (max-width: 770px) {
-    body {
-        max-width: 770px;
-    }
-
-    header {
-        width: 200px;
-    }
-}
-
-@media screen and (max-width: 580px) {
-    body {
-        max-width: 580px;
-    }
+@media screen and (max-width: 878px) {
 
     header {
         width: 200px;
     }
 
+
+    .row .div-card {
+        width: calc(100% / 4 - 1em / 4 * 3);
+    }
+
+    .row div.suggestions-card {
+        width: calc(100% / 4 - 1em / 4 * 3);
+    }
+
+    .row div.popular-card {
+        width: calc(100% / 4 - 1em / 4 * 3);
+    }
+
 }
 
-@media screen and (max-width: 480px) {
-    body {
-        max-width: 480px;
+@media screen and (max-width: 638px) {
+
+    header {
+        width: 200px;
     }
+
+    .row .div-card {
+        width: calc(100% / 2 - 1em / 2);
+    }
+
+    .row div.suggestions-card {
+        width: calc(100% / 2 - 1em / 2);
+    }
+
+    .row div.popular-card {
+        width: calc(100% / 2 - 1em / 2);
+    }
+
+}
+
+@media screen and (max-width: 552px) {
 
     header {
         width: 40px;
